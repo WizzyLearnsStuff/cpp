@@ -12,3 +12,7 @@ AKA These are the reasons to some weird errors/behaviours I encountered
   - https://stackoverflow.com/questions/47834180/set-an-array-to-zero-with-c11
   - https://stackoverflow.com/questions/9146395/reset-c-int-array-to-zero-the-fastest-way
   - Personally use `for (T &elem : arr) elem = 0;` for resetting and `T arr = {0};` for initialisation
+
+- Lookup tables are fast, for small tables an integer can be used to hold the table
+  - https://stackoverflow.com/a/47846874/10540048
+  - For larger N (N>64/128/25), allocating memory for the table is the best way
